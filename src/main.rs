@@ -147,8 +147,8 @@ fn main() {
     let a = F5x2::new(1, 0); // Coefficient a = 1
     let _b = F5x2::new(1, 0); // Coefficient b = 1
 
-    let p1 = Point::new(Some(F5x2::new(1, 2)), Some(F5x2::new(4, 4)));
-    let p2 = Point::new(Some(F5x2::new(1, 2)), Some(F5x2::new(4, 4)));
+    let p1 = Point::new(Some(F5x2::new(2, 0)), Some(F5x2::new(4, 0))); 
+    let p2 = Point::new(Some(F5x2::new(3, 0)), Some(F5x2::new(4, 0)));
 
     let p3 = point_add(p1, p2, a);
 
