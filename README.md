@@ -1,6 +1,6 @@
 # Elliptic Curve Arithmetic over $\mathbb{F}_{p^k}$
 
-This project implements arithmetic in a finite field extension $\mathbb{F}_{p^k}$ and defines elliptic curve point addition over this field. The implementation uses $\mathbb{F}_{5^2}$ as an example but is generalizable to other extensions.
+This project implements arithmetic in a finite field extension $\mathbb{F}_{p^k}_$ and defines elliptic curve point addition over this field. The implementation uses  $\mathbb{F}_{5^2}$ as an example but is generalizable to other extensions.
 
 ## Features
 
@@ -13,24 +13,20 @@ This project implements arithmetic in a finite field extension $\mathbb{F}_{p^k}
 
 Elements of $\mathbb{F}_{5^2}$ are represented as:
 
-\[
-a + bt, \quad \text{where } t^2 \equiv 3 \pmod{5}
-\]
+$a + bt, \quad \text{where } t^2 \equiv 3 \pmod{5}$
 
 ### Operations:
 
-- **Addition**: \((a + bt) + (c + dt) = (a + c) + (b + d)t\)
-- **Multiplication**: \((a + bt) \cdot (c + dt) = ac + (ad + bc)t + bd t^2\), using \(t^2 = 3\)
-- **Inversion**: \((a + bt)^{-1} = (a - bt) / (a^2 - 3b^2)\)
+- **Addition**: $(a + bt) + (c + dt) = (a + c) + (b + d)t$
+- **Multiplication**: $(a + bt) \cdot (c + dt) = ac + (ad + bc)t + bd t^2$, using $t^2 = 3$
+- **Inversion**: $(a + bt)^{-1} = (a - bt) / (a^2 - 3b^2)$
 - **Modular Inverse**: Computed using the extended Euclidean algorithm
 
 ## Elliptic Curve Arithmetic
 
 We consider the elliptic curve equation:
 
-\[
-y^2 = x^3 + ax + b
-\]
+$y^2 = x^3 + ax + b$
 
 Operations:
 
