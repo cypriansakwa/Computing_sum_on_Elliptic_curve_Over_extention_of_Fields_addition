@@ -1,5 +1,5 @@
-# Elliptic Curve Arithmetic over $\mathbb{F}_{p^k}$
-
+# Computing sum of Points on an Elliptic curve Over extention of Fields $\mathbb{F}_{p^k}$
+## Overview
 This project implements arithmetic in a finite field extension $\mathbb{F}_{p^k}_$ and defines elliptic curve point addition over this field. The implementation uses  $\mathbb{F}_{5^2}$ as an example but is generalizable to other extensions.
 
 ## Features
@@ -59,58 +59,7 @@ cargo run
 Example output (for **𝔽₅²**):
 
 ```sh
-Elements of \mathbb{F}_{5^2}:
-0 
-1t
-2t
-3t
-4t
-1
-1 + 1t
-1 + 2t
-1 + 3t
-1 + 4t
-2
-2 + 1t
-2 + 2t
-2 + 3t
-2 + 4t
-3
-3 + 1t
-3 + 2t
-3 + 3t
-3 + 4t
-4
-4 + 1t
-4 + 2t
-4 + 3t
-4 + 4t
-
-Points on the elliptic curve y^2 = x^3 + x + 1 over \mathbb{F}_{5^2}:
-Point (0, 1)
-Point (0, 4)
-Point (1, 1t)
-Point (1, 4t)
-Point (1 + 2t, 1 + 1t)
-Point (1 + 2t, 4 + 4t)
-Point (1 + 3t, 1 + 4t)
-Point (1 + 3t, 4 + 1t)
-Point (2, 1)
-Point (2, 4)
-Point (2 + 2t, 1t)
-Point (2 + 2t, 4t)
-Point (2 + 3t, 1t)
-Point (2 + 3t, 4t)
-Point (3, 1)
-Point (3, 4)
-Point (3 + 1t, 1 + 3t)
-Point (3 + 1t, 4 + 2t)
-Point (3 + 2t, 2)
-Point (3 + 2t, 3)
-Point (3 + 3t, 2)
-Point (3 + 3t, 3)
-Point (3 + 4t, 1 + 2t)
-Point (3 + 4t, 4 + 3t)
-Point (4, 2)
-Point (4, 3)
+P1: (2, 4)
+P2: (3, 4)
+P1 + P2: (0, 1)
 ```
